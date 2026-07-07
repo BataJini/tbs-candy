@@ -77,6 +77,19 @@ function buildGraffiti() {
     scene3.add(mesh);
     tagMeshes.set(def.id, { mesh, def, isMural: true, done, seed: i + 1 });
   });
+  // "MADE BY BATAJINI" signature tags pre-painted on walls around the city
+  const sigs = [
+    { pos: [-31.25, 1.2, -6], face: '-x', w: 3.0, h: 1.15 },   // underpass wall
+    { pos: [12, 1.3, -55.6], face: '+z', w: 2.6, h: 1.0 },     // old blocks garage
+    { pos: [24, 1.3, 90.15], face: '+z', w: 3.0, h: 1.15 },    // BASSMENT 909 exterior
+    { pos: [-68, 1.3, 61.4], face: '-z', w: 2.6, h: 1.0 },     // KHD bunker wall
+    { pos: [60, 31.5, -81.7], face: '+z', w: 2.4, h: 0.95 },   // radio-shack roof (spawn view)
+    { pos: [-2, 1.6, 27.1], face: '+z', w: 2.6, h: 1.0 },      // metro entrance
+  ];
+  sigs.forEach((def, i) => {
+    addTagBoard(def);
+    scene3.add(planeAt(TX.madeByTex(i + 1), def.pos, def.face, def.w, def.h));
+  });
   // spray particle cloud (recycled)
   const pGeo = new THREE.BufferGeometry();
   const pCount = 40;

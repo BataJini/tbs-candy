@@ -497,3 +497,27 @@ export function dancefloorTex() {
   grunge(x, 64, 64, 20, 'rgba(0,0,0,0.3)');
   return c;
 }
+
+/* ---------- "MADE BY BATAJINI" signature tag ---------- */
+export function madeByTex(seed = 1) {
+  srand(seed * 613 + 7);
+  const [c, x] = mkCanvas(256, 96);
+  x.clearRect(0, 0, 256, 96);
+  const col = pick(['#3dfc7a', '#ff4fa3', '#ffe93c', '#3aa0ff']);
+  x.textAlign = 'center'; x.lineJoin = 'round';
+  // "MADE BY" small tag on top
+  x.font = "900 22px Impact, 'Arial Black', sans-serif";
+  x.strokeStyle = '#0d0a14'; x.lineWidth = 6; x.strokeText('MADE BY', 128, 26);
+  x.fillStyle = '#efe6d4'; x.fillText('MADE BY', 128, 26);
+  // big "BATAJINI" spray tag
+  x.font = "900 46px Impact, 'Arial Black', sans-serif";
+  x.save(); x.translate(128, 62); x.rotate(-0.03);
+  x.strokeStyle = '#0d0a14'; x.lineWidth = 9; x.strokeText('BATAJINI', 0, 0);
+  x.fillStyle = col; x.fillText('BATAJINI', 0, 0);
+  // gloss
+  x.fillStyle = 'rgba(255,255,255,0.4)'; x.fillText('BATAJINI', -1, -3);
+  x.fillStyle = col; x.fillText('BATAJINI', 0, 1);
+  x.restore();
+  drips(x, 40, 78, 170, col, 7);
+  return c;
+}
