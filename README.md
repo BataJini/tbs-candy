@@ -1,8 +1,10 @@
 # TBS CANDY
 
-A first-person Tbilisi rave-punk graffiti sandbox in the browser.
+A first-person open-world game set in a surreal version of Tbilisi. Runs in the browser.
 
-![TBS CANDY](screenshot.jpg)
+![TBS CANDY](screenshot-1.png)
+![TBS CANDY](screenshot-2.png)
+![TBS CANDY](screenshot-3.png)
 
 ## Play
 
