@@ -2,6 +2,10 @@
 
 A first-person open-world game set in a surreal version of Tbilisi. Runs in the browser.
 
+### ▶ [PLAY NOW](https://batajini.github.io/tbs-candy/)
+
+[![Play Now](https://img.shields.io/badge/▶_PLAY_NOW-1da34d?style=for-the-badge&labelColor=0d0a14)](https://batajini.github.io/tbs-candy/)
+
 ![TBS CANDY](screenshot-1.png)
 ![TBS CANDY](screenshot-2.png)
 ![TBS CANDY](screenshot-3.png)
