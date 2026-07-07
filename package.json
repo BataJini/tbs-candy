@@ -1,0 +1,32 @@
+{
+  "name": "tbs-candy",
+  "version": "1.0.0",
+  "description": "TBS CANDY — a grimy first-person Tbilisi rave-punk graffiti sandbox for the browser",
+  "type": "module",
+  "license": "MIT",
+  "author": "Batajini",
+  "homepage": "https://batajini.github.io/tbs-candy/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BataJini/tbs-candy.git"
+  },
+  "keywords": [
+    "game",
+    "threejs",
+    "webgl",
+    "graffiti",
+    "sludge-life",
+    "tbilisi",
+    "first-person",
+    "sandbox"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "^0.185.1",
+    "vite": "^8.1.3"
+  }
+}

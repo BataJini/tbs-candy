@@ -1,0 +1,14 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+
+# editor / OS
+.DS_Store
+Thumbs.db
+*.log
+
+# test / tooling artifacts
+.playwright-mcp/
+.vite/
