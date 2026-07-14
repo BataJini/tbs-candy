@@ -79,12 +79,12 @@ function buildGraffiti() {
   });
   // "MADE BY BATAJINI" signature tags pre-painted on walls around the city
   const sigs = [
-    { pos: [-31.25, 1.2, -6], face: '-x', w: 3.0, h: 1.15 },   // underpass wall
-    { pos: [12, 1.3, -55.6], face: '+z', w: 2.6, h: 1.0 },     // old blocks garage
-    { pos: [24, 1.3, 90.15], face: '+z', w: 3.0, h: 1.15 },    // BASSMENT 909 exterior
-    { pos: [-68, 1.3, 61.4], face: '-z', w: 2.6, h: 1.0 },     // KHD bunker wall
-    { pos: [60, 31.5, -81.7], face: '+z', w: 2.4, h: 0.95 },   // radio-shack roof (spawn view)
-    { pos: [-2, 1.6, 27.1], face: '+z', w: 2.6, h: 1.0 },      // metro entrance
+    { pos: [-31.25, 0.9, -10], face: '-x', w: 2.8, h: 1.05 },  // underpass wall, below tag u1
+    { pos: [20, 1.3, -32.9], face: '+z', w: 2.6, h: 1.0 },     // Old Blocks tower, below tag o1
+    { pos: [18, 1.3, 2.15], face: '+z', w: 2.6, h: 1.0 },      // gov building, below tag r2
+    { pos: [-5.1, 1.4, 80], face: '-x', w: 2.6, h: 1.0 },      // BASSMENT 909 interior, below tag c1
+    { pos: [60, 30.7, -81.6], face: '+z', w: 2.4, h: 0.95 },   // radio-shack roof, below tag t1 (spawn view)
+    { pos: [-68, 0.9, 61.4], face: '-z', w: 2.6, h: 1.0 },     // KHD bunker, below tag c3
   ];
   sigs.forEach((def, i) => {
     addTagBoard(def);
